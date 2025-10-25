@@ -1,0 +1,91 @@
+<section id="products" class="products">
+        <h2>Our Products</h2>
+        <section class="products">
+        <div class="product">
+            <img src="Antiseptic Facial Soap 2500.jpeg" alt="">
+            <h3>Antiseptic Facial Soap</h3>
+            <p>#2,500</p>
+            <a href="https://wa.me/2349025076734?text=Hi,%20I%20want%20to%20order%20antiseptic%20facial%20soap" class="btn">Order Now</a>
+        </div>
+        <div class="product">
+            <img src="Molato Soap 500ml.jpeg" alt="">
+            <h3>Molato Soap 500ml</h3>
+            <p>#11,000</p>
+            <a href="https://wa.me/2349025076734?text=Hi,%20I%20want%20to%20order%20molato%20soap" class="btn">Order Now</a>
+        </div>
+        <div class="product">
+            <img src="Whitening Soap 5000.jpeg" alt="">
+            <h3>Whitening Soap</h3>
+            <p>#5,000</p>
+             <a href="https://wa.me/2349025076734?text=Hi,%20I%20want%20to%20order%20whitening%20soap" class="btn">Order Now</a>
+        </div>
+        <div class="product">
+            <img src="Lightening Soap 4500.jpeg" alt="">
+            <h3>Lightening Soap</h3>
+            <p>#4,,500</p>
+             <a href="https://wa.me/2349025076734?text=Hi,%20I%20want%20to%20order%20lightening%20soap" class="btn">Order Now</a>
+        </div>
+    </section>
+
+    /* Product Grid Layout */
+.product-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 40px;
+  justify-items: center;
+  background-color: #fff;
+}
+
+/* 📱 Responsive design for smaller screens */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Arrange products in rows & columns */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 4 per row */
+  gap: 30px;
+  justify-items: center;
+
+   <!-- Header -->
+    <header>
+        <div class="header-top">
+           <img src="logo.jpg" alt="business-logo" class="logo">
+        </div>
+        <div class="business-name">
+           <h1>Rosale's Stores</h1>
+           <p>Meeting your daily needs and desires</p>
+        </div>
+        <nav class="vertical-nav">
+           <a href="index.html" class="btn">Home</a>
+           <a href="about.html" class="btn">About</a>
+           <a href="contact.html" class="btn">Contact</a>
+        </nav> 
+    </header>
+
+    /* Product Section */
+.product-section {
+  flex: 1;
+  padding: 30px 50px;
+}
+
+/* Product Grid Layout */
+.product-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  justify-items: center;
+  background-color: #fff;
+}
